@@ -1,0 +1,19 @@
+py -m venv env
+source env/Scripts/activate
+pip install django
+django-admin startproject config .
+py manage.py startapp trip
+add app to settings.py installed apps
+set up urls.py in app
+import include in projects url.py
+path('', include('trip/urls.py))
+in views.py from django.views.generic import TemplateView
+add class to views.py
+	class HomeView(TemplateView):
+		emplate = 'trip/index.html'
+import HomeView app in urls.py
+	from .views impor HomeView
+	path('', HomeView.as_view(), name='home'),
+create templates/app_name/index.html
+py manage.py migrate
+check server - py manage.py runserver
