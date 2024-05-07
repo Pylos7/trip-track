@@ -1,8 +1,0 @@
-We will be using the base directory for our aut template page
-templates/registration/login.html
-
-Change configuration for accesing the templates foldeer in the base directory
-in settings.py
-
-Add the following to DIRS in TEMPLATES in settings.py
-os.path.join(BASE_DIR, 'templates')

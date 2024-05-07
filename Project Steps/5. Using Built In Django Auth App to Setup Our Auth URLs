@@ -1,2 +1,0 @@
-in project urls.py add
-	path('accounts/', include('django.contrib.auth.urls')),
